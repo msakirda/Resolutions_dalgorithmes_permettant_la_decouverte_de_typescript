@@ -1,3 +1,16 @@
+//## Exercice 1 - Les variables
+//creeer une variable a qui contient le nombre 5
+//creeer une variable b qui contient le nombre 1
+//afficher deux logs pour indiquer si ces variables sont supÃ©rieures Ã  PI
+//et qui est la plus grande des deux valeurs (utiliser une ternaire)
+
 export const exo1 = () => {
-    console.log('toto');
+    console.log('exo1');
 };
+
+let a = 5;
+let b = 1;
+console.log("a est supérieur à PI :", a > Math.PI);
+console.log("b est supérieur à PI :", b > Math.PI);
+let plusGrandeValeur = (a > b) ? a : b;
+console.log("La plus grande valeur est :", plusGrandeValeur);

@@ -1,15 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const exo1_1 = require("./exo1");
-// A Supprimer
-console.log('Hello TypeScript');
-let i = 0;
-i++;
-if (i < 2) {
-    i += 3;
-}
-else {
-    i += 2;
-}
-console.log('affichage de i', i);
+const exo2_1 = require("./exo2");
+const exo3_1 = require("./exo3");
+const exo4_1 = require("./exo4");
 (0, exo1_1.exo1)();
+(0, exo2_1.exo2)();
+(0, exo3_1.exo3)();
+(0, exo4_1.exo4)();

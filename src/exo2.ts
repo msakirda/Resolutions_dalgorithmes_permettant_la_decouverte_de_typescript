@@ -1,4 +1,3 @@
-"use strict";
 // Exercice 2 - Les tableaux
 // Creeer un tableau qui contient les nombres de 1 Ã  10
 // 1 - en initialisant une variable
@@ -10,25 +9,28 @@
 // Afficher le 4Ã¨me Ã©lÃ©ment du tableau
 // doublez toutes les valeurs du tableau dans une variable tableauBis
 // Afficher le tableauBis
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.exo2 = void 0;
-const exo2 = () => {
+
+export const exo2 = () => {
     console.log('exo2');
 };
-exports.exo2 = exo2;
+
 //  Initialiser le tableau avec les nombres de 1 à 10 (VARIABLE)
-let tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let tableau: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 // Initialiser le tableau vide (BOUCLE)
-// let tableau: number[] = [];
+        // let tableau: number[] = [];
+
 // Utiliser une boucle pour ajouter les nombres de 1 à 10 au tableau
-// for (let i = 1; i <= 10; i++) {
-// tableau.push(i);
-// }
+        // for (let i = 1; i <= 10; i++) {
+        // tableau.push(i);
+        // }
+
 // Utiliser NEW ARRAY, FILL ET MAP pour créer le tableau avec les nombres de 1 à 10
-// let tableau: number[] = Array.from({ length: 10 }, (_, index) => index + 1);
+        // let tableau: number[] = Array.from({ length: 10 }, (_, index) => index + 1);
+
 console.log("Longueur du tableau :", tableau.length);
 console.log("Premier élément :", tableau[0]);
 console.log("Dernier élément :", tableau[tableau.length - 1]);
 console.log("4ème élément :", tableau[3]);
-let tableauBis = tableau.map((element) => element * 2);
+let tableauBis: number[] = tableau.map((element) => element * 2);
 console.log("tableauBis :", tableauBis);
